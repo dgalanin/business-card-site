@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
   const message = `
   Message from ${req.body.name}
-  Email: req.body.email
+  Email: ${req.body.email}
   Feedback: ${req.body.feedback}`
 
   send_telegram_message(message)
